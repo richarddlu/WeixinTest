@@ -3,7 +3,7 @@ if(isset($_GET['code'])) {
 	$code = $_GET['code'];
 	echo $code.'<br>';
 
-	$json = file_get_contents('https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxa0be4dbfe322ad09&secret=af5bfbe98b02a77a22b3da239aaa94df&code='.$code.'&grant_type=authorization_code');
+	$json = file_get_contents('https://api.weixin.qq.com/sns/oauth2/access_token?appid=APPID&secret=SECRET&code='.$code.'&grant_type=authorization_code');
 	$json_object = json_decode($json);
 	$access_token = $json_object->access_token;
 	$openid = $json_object->openid;

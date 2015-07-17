@@ -5,8 +5,8 @@
 	<script >
 	<?php 	// signature
 	// get access_token
-	define('APPID', 'wxa0be4dbfe322ad09');
-	define('APPSECRET', 'af5bfbe98b02a77a22b3da239aaa94df');
+	define('APPID', 'app id');
+	define('APPSECRET', 'app secret');
 	$access_token_json = file_get_contents('https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid='.APPID.'&secret='.APPSECRET);
 	$access_token_json_decoded = json_decode($access_token_json);
 	$access_token = $access_token_json_decoded->access_token;
