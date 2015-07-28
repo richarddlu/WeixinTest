@@ -19,7 +19,7 @@
 	// signature
 	$timestamp = time();
 	$nonceStr = '65yrtfgh45s6&kdh';
-	$url = 'http://52.26.147.50/js-sdk.php';
+	$url = 'http://112.126.83.25/js-sdk.php';
 
 	$string1 = 'jsapi_ticket='.$jsapi_ticket.'&noncestr='.$nonceStr.'&timestamp='.$timestamp.'&url='.$url;
 	$signature = sha1($string1);
@@ -71,7 +71,7 @@
 		wx.onMenuShareAppMessage({
 		    title: '分享给好友测试', // 分享标题
 		    desc: '', // 分享描述
-		    link: 'http://52.26.147.50/js-sdk.php', // 分享链接
+		    link: 'http://112.126.83.25/js-sdk.php', // 分享链接
 		    imgUrl: 'http://fdfs.xmcdn.com/group12/M0B/44/05/wKgDXFWlzQeCXNHXAAJ7cs9_xK0560_mobile_large.jpg', // 分享图标
 		    type: '', // 分享类型,music、video或link，不填默认为link
 		    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
